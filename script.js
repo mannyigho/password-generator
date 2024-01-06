@@ -227,10 +227,12 @@ function writePassword() {
     passwordText.value = "Invalid! All requirements are to be met.";
     console.clear();
     console.log("Invalid! All requirements are to be met.");
+    alert("Invalid! All requirements are to be met.");
   }else{
     passwordText.value = password;
     console.clear();
     console.log("The secure password is " + password);
+    alert("The secure password is " + password);
   }
 }
 
