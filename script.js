@@ -225,8 +225,12 @@ function writePassword() {
   var passwordText = document.querySelector('#password');
   if(password === 'Invalid'){
     passwordText.value = "Invalid! All requirements are to be met.";
+    console.clear();
+    console.log("Invalid! All requirements are to be met.");
   }else{
     passwordText.value = password;
+    console.clear();
+    console.log("The secure password is " + password);
   }
 }
 
